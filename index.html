@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+  </head>
+  <body>
+    <!-- parte iniziale sopra -->
+    <header class="w-100" id="top-side">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid  d-flex flex-nowrap">
+                <a class="" href="#">
+                    <img class="logo" src="./assets/img/logo.svg" alt="">
+                    <img class="logo-m img-fluid" src="./assets/img/mobile-logo.png" alt="">
+                </a>
+                <div class="container-fluid">
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Search">
+                        <a href="#"><i class="mx-2 fa-solid fa-list-ul"></i></a>
+                        <a href="#"><i class="mx-2 fa-solid fa-circle-question"></i></a>
+                        <a href="#"><i class="mx-2 fa-solid fa-ellipsis-vertical"></i></a>
+                        <a href="#"><i class="mx-2 fa-solid fa-bell"></i></a>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- parte sotto diviso in due -->
+    <div class="d-flex" id="bottom-side">
+        <div id="aside" class="col-1 d-flex flex-column justify-content-between text-center py-3">
+            <div class="d-flex flex-column text-white">
+                <a href="#">
+                    <i class="fa-solid fa-house"></i>
+                    <span class="d-sm-none d-lg-inline mx-1">Home</span>
+                </a>
+                <a href="#">
+                    <i class="fa-solid fa-chart-simple"></i>
+                    <span class="d-sm-none d-lg-inline mx-1">Stats</span>
+                </a>
+                <a href="#">
+                    <i class="fa-solid fa-signal"></i>
+                    <span class="d-sm-none d-lg-inline mx-1">Signals</span>
+                </a>
+            </div>
+            <div>
+                <a href="#">
+                    <i class="fa-solid fa-gear"></i>
+                    <span class="d-sm-none d-lg-inline mx-1">Admin</span>
+                </a>
+            </div>
+        </div>
+        <main class="col-11">
+            <!-- parte blu -->
+            <section id="boolean-pills" class="text-white d-flex flex-sm-column flex-lg-row  p-1">
+                <div class="col-lg-6 order-sm-2 order-lg-1">
+                    <h1>Boolean</h1>
+                    <span class="badge rounded-pill text-bg-secondary">Piano blaze</span><br>
+                    <span class="badge rounded-pill text-bg-secondary">3 app</span>
+                    <a href="#"><i class="fa-solid fa-angles-right"></i></a>
+                    <span class="d-lg-none badge rounded-pill text-bg-secondary">+</span>
+                    <span class="d-sm-none d-lg-inline badge rounded-pill text-bg-secondary">Boolean mobile app</span>
+                    <span class="d-sm-none d-lg-inline badge rounded-pill text-bg-secondary">Boolean web app</span>
+                    <span class="d-sm-none d-lg-inline badge rounded-pill text-bg-secondary">Boolean blog app</span>
+                </div>
+
+                <div class="col-lg-4 py-3 order-sm-3 order-lg-2">
+                    <span>Studenti online negli ultimi 30 minuti</span>
+                    <h2>125</h2>
+                </div>
+
+                <div class="col-lg-2 py-3 order-sm-1 order-lg-3">
+                    <span class="mx-2">Nuovo Studente</span>
+                    <button class="btn btn-outline-light" type="submit">+</button>
+                </div>
+            </section>
+            
+            <section id="cards" class="">
+
+            </section>
+        </main>
+    </div>
+    <!-- link per javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
+</html>

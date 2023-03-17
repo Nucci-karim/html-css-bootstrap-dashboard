@@ -1,0 +1,97 @@
+body{
+    height: 100vh;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+/* header con navigation */
+#top-side{
+    position: fixed;
+}
+
+nav .logo{
+    display: none;
+}
+
+nav .logo-m{
+    max-width: 60px;
+}
+
+form a .fa-solid{
+    text-decoration: none;
+    color: black;
+    display: none;
+}
+
+form a .fa-bell{
+    display: inline-block;
+    color: rgb(255 143 0);
+}
+
+/* aside laterale a sinistra */
+#bottom-side{
+    height: 100%;
+    padding-top: 20%;
+}
+
+#aside{
+    background-color: rgb(5 30 52);
+    background-image: url(../img/sidebar-bg.png);
+}
+
+#boolean-pills{
+    background-color: rgb(29 114 232);
+}
+
+#aside a i{
+    color: white;
+}
+
+/* main a destra con overflow */
+h1{
+    display: inline-block;
+}
+
+/* boolean pills */
+.text-bg-secondary{
+    background-color: rgb(22 91 186) !important;
+}
+
+.fa-angles-right{
+    color: white;
+}
+
+/* cards */
+
+/* tutte le query */
+@media only screen and (min-width:576px) {
+    #bottom-side{
+        padding-top: 15%;
+    }
+}
+
+@media only screen and (min-width:768px) {
+    #bottom-side{
+        padding-top: 10%;
+    }
+}
+
+@media only screen and (min-width:992px){
+    nav .logo{
+        display: inline-block;
+    }
+    
+    nav .logo-m{
+        display: none;
+    }
+
+    form a .fa-solid{
+        display: inline-block;
+    }
+
+    #bottom-side{
+        padding-top: 5%;
+    }
+}

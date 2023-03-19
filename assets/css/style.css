@@ -2,10 +2,6 @@ body{
     height: 100vh;
 }
 
-a{
-    text-decoration: none;
-    color: white;
-}
 /* header con navigation */
 #top-side{
     position: fixed;
@@ -49,6 +45,11 @@ form a .fa-bell{
     color: white;
 }
 
+#aside a{
+    text-decoration: none;
+    color: white;
+}
+
 /* main a destra con overflow */
 h1{
     display: inline-block;
@@ -64,11 +65,26 @@ h1{
 }
 
 /* cards */
+.th-first{
+    width: 50%;
+}
+
+th img{
+    width: 10%;
+}
+
+.text-bg-warning{
+    color: white !important;
+}
 
 /* tutte le query */
 @media only screen and (min-width:576px) {
     #bottom-side{
         padding-top: 15%;
+    }
+
+    th img{
+    width: 7%;
     }
 }
 
@@ -94,4 +110,22 @@ h1{
     #bottom-side{
         padding-top: 5%;
     }
+
+    th img{
+    width: 6%;
+    }
+
+    .th-first{
+    width: 320px;
+    }
+}
+
+@media only screen and (min-width:1400px) {
+    #bottom-side{
+        padding-top: 3%;
+    }
+
+    .th-first{
+    width: 400px;
+}
 }
